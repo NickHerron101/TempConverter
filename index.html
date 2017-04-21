@@ -2,19 +2,20 @@
 <html>
 <head>
 	<title>Temp Converter</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 Input Temperature:
-<input id="tempNumber" type="text" name="text">
+<input type="number" name="text" id="temp-input">
 
 <div>
-  <label><input id="farenHeight" type="radio" name="tempType" value="farenHeight">
+  <label><input type="radio" name="tempType" value="Fahrenheit" id="f-selected" checked>
   To Fahrenheit</label><br>
-  <label><input id="celcius" type="radio" name="tempType" value="celcius">To Celcius</label><br>
+  <label><input type="radio" name="tempType" value="Celcius" id="c-selected">To Celcius</label><br>
 </div>
-<button id="converter" type="button">Convert</button>
-<button id="clear" type="button">Clear Field</button>
-<div id="something">something here</div>
+<button type="button" id="submit-btn">Convert</button>
+<button type="button" id="clear-btn">Clear Field</button>
+<div id="converted-temp">something here</div>
 <script type="text/javascript" src="converter.js"></script>
 </body>
 </html>
